@@ -1,0 +1,19 @@
+[package]
+name = "routeguide-consumer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tonic = "0.8"
+futures-util = "0.3"
+tokio = { version = "1.0", features = [
+  "rt-multi-thread",
+  "macros",
+  "sync",
+  "time",
+] }
+rand = "0.7"
+async-stream = "0.2"
+routeguide-client = { path = "../routeguide-client" }

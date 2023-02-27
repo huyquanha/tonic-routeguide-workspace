@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+  "protogen",
+  "routeguide-client",
+  "routeguide-consumer",
+  "routeguide-server",
+]
