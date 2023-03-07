@@ -1,0 +1,1 @@
+# This is only added to make crates_repository() happy: it wants to track all packages manifest in a Cargo workspace.

@@ -1,0 +1,10 @@
+load("@crate_index//:defs.bzl", "aliases", "all_crate_deps")
+load("@rules_rust//rust:defs.bzl", "rust_binary")
+
+rust_binary(
+    name = "routeguide-server",
+    srcs = glob(["src/**/*.rs"]),
+    aliases = aliases(),
+    data = glob(["data/**/*.json"]),
+    deps = all_crate_deps() + ["@rules_rust//tools/runfiles"],
+)
